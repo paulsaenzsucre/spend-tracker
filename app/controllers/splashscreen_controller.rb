@@ -1,5 +1,5 @@
 class SplashscreenController < ApplicationController
   def index
-    @test = "Hola"
+    @test = 'Hola'
   end
 end
