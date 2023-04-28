@@ -1,0 +1,74 @@
+@import "shared.css";
+
+.dev-cont {
+  height: 100vh;
+  background-color: var(--background-color);
+  padding: 1rem 0;
+}
+
+.dev-info {
+  border: 0.063rem solid var(--text-light-color);
+  background-color: white;  
+  padding: 0 1rem;
+}
+
+.new_user {
+  margin: 0;
+}
+
+.dev-links-cont {
+  padding: 1rem;
+  text-align: center;
+}
+
+.dev-link-btn {
+  color: var(--text-semi-dark-color);
+}
+
+.dev-input {
+  width: 100%;
+  border: none;
+  padding: 0.8rem 0;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--text-dark-color);
+}
+
+.dev-input::-webkit-input-placeholder {
+  color: var(--text-semi-light-color);
+}
+
+.dev-input::-ms-input-placeholder {
+  color: var(--text-semi-light-color);
+}
+
+.dev-input::-moz-placeholder {
+  color: var(--text-semi-light-color);
+}
+
+.dev-input::placeholder {
+  color: var(--text-semi-light-color);
+}
+
+.dev-checkbox {
+  margin: 0;
+  margin: 1rem 0;
+  border: 0.063rem solid var(--text-semi-light-color);
+  border-radius: var(--radius-4);
+}
+
+.dev-sep {
+  height: 0.063rem;
+  background-color: var(--text-light-color);
+  padding: 0 2rem;
+  opacity: 0.2;
+}
+
+.dev-btn {
+  width: 100%;
+}
+
+.dev-actions {
+  padding: 1rem;
+  text-align: center;
+}

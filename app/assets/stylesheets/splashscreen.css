@@ -40,7 +40,9 @@
 .splash-btn {
   display: block;
   font-weight: 300;
+  font-size: 1rem;
   text-align: center;
+  border: 0;;
   border-radius: var(--radius-4);
   padding: 0.8rem;
 }
@@ -53,4 +55,9 @@
 .signup-btn {
   color: var(--text-semi-dark-color);
   background-color: var(--background-color);
+}
+
+.sign-down {
+  color: white;
+  background-color: var(--danger-color);
 }
