@@ -30,11 +30,6 @@
         <%= f.password_field :password_confirmation, autocomplete: "new-password", :class => "dev-input", :placeholder => "Confirm password" %>
       </div>
     </div>
-    
-    <div class="dev-actions">
-      <%= f.submit "SIGN UP", :class => "splash-btn login-btn dev-btn" %>
-      <%= link_to "BACK", :back, class: "splash-btn link-btn signup-btn" %>
-    </div>
   <% end %>
 
   <%= render "devise/shared/links" %>

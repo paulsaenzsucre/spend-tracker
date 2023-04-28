@@ -20,12 +20,6 @@
         <%= f.password_field :password_confirmation, autocomplete: "new-password", :class => "dev-input", :placeholder => "Password" %>
       </div>
     </div>
-    
-
-    <div class="dev-actions">
-      <%= f.submit "CHANGE PASSWORD", :class => "splash-btn login-btn dev-btn" %>
-      <%= link_to "CANCEL", root_path, class: "splash-btn link-btn signup-btn" %>
-    </div>
   <% end %>
 
   <%= render "devise/shared/links" %>

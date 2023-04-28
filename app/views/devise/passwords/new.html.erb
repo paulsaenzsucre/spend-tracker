@@ -8,11 +8,6 @@
         <%= f.label :email, :class => "visually-hidden" %>
         <%= f.email_field :email, autofocus: true, autocomplete: "email", :class => "dev-input", :placeholder => "Email" %>
       </div>
-    </div>    
-
-    <div class="dev-actions">
-      <%= f.submit "SEND INSTRUCTIONS", :class => "splash-btn login-btn dev-btn" %>
-      <%= link_to "CANCEL", root_path, class: "splash-btn link-btn signup-btn" %>
     </div>
   <% end %>
 
