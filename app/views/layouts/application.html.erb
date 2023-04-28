@@ -13,6 +13,7 @@
   <body>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
+    <%= render 'layouts/navbar', content: @navbar_content %>
     <%= yield %>
   </body>
 </html>

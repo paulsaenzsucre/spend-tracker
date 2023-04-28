@@ -44,6 +44,11 @@
   width: 1px;
 }
 
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
 .center {
   margin: 0;
   position: absolute;
