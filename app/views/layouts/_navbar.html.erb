@@ -1,0 +1,15 @@
+<nav class="flex-row nav-bar">
+  <%= image_tag '/back.svg', :class => "navbar-back-btn" %>
+  <h1 class="navbar-title"><%= content['title'] %></h1>
+  <% unless content['form_id'].nil? %>
+    <button class="navbar-btn" id="submit-form-btn" type="button"><%= content['action_name']%></button>
+  <% end %>
+</nav>
+
+<% unless content['form_id'].nil? %>
+  <script>
+    document.getElementById("submit-form-btn").addEventListener("click", () => {
+      document.getElementById(<%= content['form_id']%>).submit();
+    });
+  </script>
+<% end %>
