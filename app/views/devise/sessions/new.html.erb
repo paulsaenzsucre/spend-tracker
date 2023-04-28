@@ -1,0 +1,36 @@
+<div class="dev-cont">
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+    <div class="dev-info">
+      <div class="field">
+        <%= f.label :email, :class => "visually-hidden" %>
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", :class => "dev-input", :placeholder => "Email" %>
+      </div>
+
+      <hr class="dev-sep">
+
+      <div class="field">
+        <%= f.label :password, :class => "visually-hidden" %>
+        <%= f.password_field :password, autocomplete: "current-password", :class => "dev-input", :placeholder => "Password" %>
+      </div>
+
+      <hr class="dev-sep">
+
+      <% if devise_mapping.rememberable? %>
+        <div class="field">
+          <%= f.check_box :remember_me, :class => "dev-checkbox" %>
+          <%= f.label :remember_me %>
+        </div>
+      <% end %>
+    </div>
+    
+
+    <div class="dev-actions">
+      <%= f.submit "LOG IN", :class => "splash-btn login-btn dev-btn" %>
+      <%= link_to "CANCEL", root_path, class: "splash-btn link-btn signup-btn" %>
+    </div>
+  <% end %>
+
+  <%= render "devise/shared/links" %>
+</div>

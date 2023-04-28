@@ -1,0 +1,20 @@
+<div class="dev-cont">
+  <%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+    <div class="dev-info">
+    
+    </div>
+    <div class="field">
+      <%= f.label :email, :class => "visually-hidden" %>
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email), :class => "dev-input", :placeholder => "Email" %>
+    </div>
+
+    <div class="dev-actions">
+      <%= f.submit "RESEND INSTRUCTIONS", :class => "splash-btn login-btn dev-btn" %>
+      <%= link_to "CANCEL", root_path, class: "splash-btn link-btn signup-btn" %>
+    </div>
+  <% end %>
+
+  <%= render "devise/shared/links" %>
+</div>
