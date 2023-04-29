@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   
   root 'categories#index'
   get '/splashscreen', to: 'splashscreen#index'
-  resources :categories, only: [:index, :new] do
+  resources :categories, only: [:index, :new, :create] do
     resources :cat_exps, only: [:index, :new, :create]
   end
   resources :expenses, only: [:new, :create]
