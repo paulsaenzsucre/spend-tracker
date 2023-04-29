@@ -43,13 +43,13 @@
   font-size: 1rem;
   text-align: center;
   border: 0;
-  border-radius: var(--radius-4);
   padding: 0.8rem;
 }
 
 .login-btn {
   color: white;
   background-color: var(--primary-color);
+  border-radius: var(--radius-4);
 }
 
 .signup-btn {
@@ -60,4 +60,5 @@
 .sign-down {
   color: white;
   background-color: var(--danger-color);
+  border-radius: var(--radius-4);
 }

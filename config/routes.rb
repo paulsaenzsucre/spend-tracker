@@ -4,6 +4,9 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   devise_for :users
   
-  root 'splashscreen#index'
+  root 'categories#index'
   get '/splashscreen', to: 'splashscreen#index'
+  resources :categories, only: [:index, :new] do
+    resources :expenses, only: [:index]
+  end
 end
