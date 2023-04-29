@@ -12,7 +12,8 @@ class CategoriesController < ApplicationController
 
   # GET /categories/new
   def new
-    @category = Category.new
+    @category = current_user.categories.new
+    @images = Dir.glob('app/assets/images/categories/*.svg')
   end
 
   # GET /categories/1/edit
@@ -24,7 +25,7 @@ class CategoriesController < ApplicationController
 
     respond_to do |format|
       if @category.save
-        format.html { redirect_to category_url(@category), notice: 'Category was successfully created.' }
+        format.html { redirect_to categories_path, notice: 'Category was successfully created.' }
         format.json { render :show, status: :created, location: @category }
       else
         format.html { render :new, status: :unprocessable_entity }

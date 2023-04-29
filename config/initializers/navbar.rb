@@ -87,6 +87,18 @@ NAVBAR_CONTENT = {
       'action_name' => 'Log out',
       'action' => 'logout',
       'form_id' => nil
+    },
+    'new' => {
+      'title' => 'ADD CATEGORY',
+      'action_name' => 'Create',
+      'action' => 'form',
+      'form_id' => 'new_cat'
+    },
+    'create' => {
+      'title' => 'ADD CATEGORY2',
+      'action_name' => 'Update',
+      'action' => 'form',
+      'form_id' => 'new_cat'
     }
   },
   'expenses' => {
@@ -95,6 +107,12 @@ NAVBAR_CONTENT = {
       'action_name' => 'Log out',
       'action' => 'logout',
       'form_id' => nil
+    },
+    'new' => {
+      'title' => 'ADD EXPENSE',
+      'action_name' => 'Add',
+      'action' => 'form',
+      'form_id' => 'new_cat'
     }
   },
   'cat_exps' => {
