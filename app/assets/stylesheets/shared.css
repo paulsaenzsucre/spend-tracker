@@ -37,7 +37,7 @@
   background-color: var(--background-color);
   height: 100vh;
   max-height: 100vh;
-  overflow: scroll;  
+  overflow: scroll;
   padding-top: 2.5rem;
   padding-bottom: 4rem;
 }

@@ -48,7 +48,7 @@
 
 .login-btn {
   color: white;
-  background-color: var(--primary-color);  
+  background-color: var(--primary-color);
   border-radius: var(--radius-4);
 }
 
@@ -59,6 +59,6 @@
 
 .sign-down {
   color: white;
-  background-color: var(--danger-color);  
+  background-color: var(--danger-color);
   border-radius: var(--radius-4);
 }
