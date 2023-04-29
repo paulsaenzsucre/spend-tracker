@@ -1,9 +1,3 @@
-<h1>New expense</h1>
-
-<%= render "form", expense: @expense %>
-
-<br>
-
-<div>
-  <%= link_to "Back to expenses", expenses_path %>
+<div class="cat-page">
+  <%= render "form", expense: @expense, categories: @categories %>
 </div>
