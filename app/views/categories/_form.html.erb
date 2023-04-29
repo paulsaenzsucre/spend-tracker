@@ -1,4 +1,4 @@
-<%= form_with(model: category) do |form| %>
+<%= form_with(model: category, html: {id: 'new_cat'}) do |form| %>
   <% if category.errors.any? %>
     <div style="color: red">
       <h2><%= pluralize(category.errors.count, "error") %> prohibited this category from being saved:</h2>
@@ -12,21 +12,40 @@
   <% end %>
 
   <div>
-    <%= form.label :user_id, style: "display: block" %>
-    <%= form.text_field :user_id %>
+    <%= form.hidden_field :user_id %>
+  </div>
+
+  <div class="dev-info">
+    <div>
+      <%= form.label :name, :class => "visually-hidden" %>
+      <%= form.text_field :name, :class => "dev-input", :placeholder => "Name" %>
+    </div>
+
+    <hr class="dev-sep">
+
+    <p class = "dev-input">Select an icon</p>
+
+    <div class="cat-icon-cont">
+      <% @images.each do |image| %>
+        <%= image_tag "categories/#{image.split('/').last}", id: "#{image.split('/').last}", class: "cat-icon", onclick: "setImageText('#{image.split('/').last}')" %>
+      <% end %>
+    </div>
   </div>
 
   <div>
-    <%= form.label :name, style: "display: block" %>
-    <%= form.text_field :name %>
-  </div>
-
-  <div>
-    <%= form.label :icon, style: "display: block" %>
-    <%= form.text_field :icon %>
-  </div>
-
-  <div>
-    <%= form.submit %>
+    <%= form.hidden_field :icon %>
   </div>
 <% end %>
+
+<script>
+  function setImageText(imageName) {
+    selected_id = document.getElementById('category_icon')
+    if(selected_id.value != "") {
+      selected_icon = document.getElementById(selected_id.value)
+      selected_icon.style.border = "none"
+    }
+    selected_id.value = imageName;
+    selected_icon = document.getElementById(imageName)
+    selected_icon.style.border = "0.2rem solid red"
+  }
+</script>
