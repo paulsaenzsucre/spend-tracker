@@ -1,17 +1,19 @@
-<div id="<%= dom_id category %>">
-  <p>
-    <strong>User:</strong>
-    <%= category.user_id %>
-  </p>
+<%= link_to category_expenses_path(category), :class => "cat-div-btn" do %>
+  <div class="flex-row cat-cont" id="<%= dom_id category %>">
+    <%= image_tag "categories/#{category.icon}", :class => "cat-icon" %>
 
-  <p>
-    <strong>Name:</strong>
-    <%= category.name %>
-  </p>
+    <div class="cat-data">
+      <div class="flex-row cat-info">
+        <p class="cat-name"><%= category.name %></p>
+        <p><strong class="cat-amount"><%= "$#{category.total_amount}" %></strong></p>
+      </div>
+      <hr class="dev-sep">
+      <div class="flex-col cat-date-cont">
+        <p class="cat-date"><%= category.last_update.strftime("%d %b %Y") %></p>
+      </div>    
+    </div>
+  </div>
+<% end %>
 
-  <p>
-    <strong>Icon:</strong>
-    <%= category.icon %>
-  </p>
 
-</div>
+
