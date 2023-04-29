@@ -26,7 +26,7 @@ RSpec.describe CategoriesController, type: :controller do
     context 'when user is logged in with invalid params' do
       let(:invalid_params) do
         { category: { name: nil, icon: 'home' } }
-      end     
+      end
 
       before do
         user.confirm

@@ -12,7 +12,7 @@ RSpec.describe ExpensesController, type: :controller do
 
   describe 'POST #create' do
     let(:user) { User.create(name: 'Shahadat Hossain', email: 'test@example.com', password: '12345678') }
-    let(:category) { Category.create(name: 'Food', icon: 'home.svg', user_id: user.id)}
+    let(:category) { Category.create(name: 'Food', icon: 'home.svg', user_id: user.id) }
 
     context 'when user is logged in with valid params' do
       let(:valid_params) do
