@@ -3,7 +3,7 @@ NAVBAR_CONTENT = {
     'index' => {
       'title' => 'SPLASHSCREEN',
       'action_name' => 'Next',
-      'action' => 'new',
+      'action' => 'form',
       'form_id' => 'new_user'
     }
   },
@@ -11,19 +11,19 @@ NAVBAR_CONTENT = {
     'new' => {
       'title' => 'REGISTER',
       'action_name' => 'Next',
-      'action' => 'new',
+      'action' => 'form',
       'form_id' => 'new_user'
     },
     'edit' => {
       'title' => 'UPDATE PROFILE',
       'action_name' => 'Update',
-      'action' => 'edit',
+      'action' => 'form',
       'form_id' => 'edit_user'
     },
     'update' => {
       'title' => 'UPDATE PROFILE',
       'action_name' => 'Update',
-      'action' => 'edit',
+      'action' => 'form',
       'form_id' => 'edit_user'
     }
   },
@@ -31,13 +31,13 @@ NAVBAR_CONTENT = {
     'new' => {
       'title' => 'LOG IN',
       'action_name' => 'Log In',
-      'action' => 'new',
+      'action' => 'form',
       'form_id' => 'new_user'
     },
     'create' => {
       'title' => 'LOG IN',
       'action_name' => 'Log In',
-      'action' => 'new',
+      'action' => 'form',
       'form_id' => 'new_user'
     }
   },
@@ -45,25 +45,25 @@ NAVBAR_CONTENT = {
     'new' => {
       'title' => 'SEND INSTRUCTIONS',
       'action_name' => 'Send',
-      'action' => 'new',
+      'action' => 'form',
       'form_id' => 'new_user'
     },
     'edit' => {
       'title' => 'UPDATE PASSWORD',
       'action_name' => 'Change',
-      'action' => 'edit',
+      'action' => 'form',
       'form_id' => 'new_user'
     },
     'update' => {
       'title' => 'UPDATE PASSWORD',
       'action_name' => 'Change',
-      'action' => 'update',
+      'action' => 'form',
       'form_id' => 'edit_user'
     },
     'create' => {
       'title' => 'SEND INSTRUCTIONS',
       'action_name' => 'Change',
-      'action' => 'update',
+      'action' => 'form',
       'form_id' => 'edit_user'
     }
   },
@@ -71,14 +71,30 @@ NAVBAR_CONTENT = {
     'new' => {
       'title' => 'CONFIRMATION',
       'action_name' => 'Send',
-      'action' => 'new',
+      'action' => 'form',
       'form_id' => 'new_user'
     },
     'create' => {
       'title' => 'UPDATE PROFILE',
       'action_name' => 'Update',
-      'action' => 'edit',
+      'action' => 'form',
       'form_id' => 'edit_user'
     }
   },
+  'categories' => {
+    'index' => {
+      'title' => 'CATEGORIES',
+      'action_name' => 'Log out',
+      'action' => 'logout',
+      'form_id' => nil
+    }
+  },
+  'expenses' => {
+    'index' => {
+      'title' => 'EXPENSES',
+      'action_name' => 'Log out',
+      'action' => 'logout',
+      'form_id' => nil
+    }
+  }
 }
