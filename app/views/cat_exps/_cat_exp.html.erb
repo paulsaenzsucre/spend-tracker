@@ -1,0 +1,14 @@
+<div class="flex-row cat-cont" id="<%= dom_id cat_exp %>">
+    <%= image_tag "expenses/spend.png", :class => "cat-icon" %>
+
+    <div class="cat-data">
+      <div class="flex-row cat-info">
+        <p class="cat-name"><%= cat_exp.expense.name %></p>
+        <p><strong class="cat-amount"><%= "$#{cat_exp.expense.amount}" %></strong></p>
+      </div>
+      <hr class="dev-sep">
+      <div class="flex-col cat-date-cont">
+        <p class="cat-date"><%= cat_exp.expense.created_at.strftime("%d %b %Y") %></p>
+      </div>    
+    </div>
+  </div>

@@ -1,0 +1,19 @@
+<nav class="flex-row nav-bar">
+  <%= link_to 'javascript:history.back()' do%>
+    <%= image_tag '/back.svg', :class => "navbar-back-btn" %>
+  <% end %>
+  <h1 class="navbar-title"><%= content['title'] %></h1>
+  <% if content['action'] == 'form' %>
+    <button class="navbar-btn" id="submit-form-btn" type="submit"><%= content['action_name']%></button>
+  <% else %>
+    <%= button_to 'Log out', destroy_user_session_path, method: :delete, :class => "navbar-btn" %>
+  <% end %>
+</nav>
+
+<% if content['action'] == 'form' %>
+  <script>
+    document.getElementById("submit-form-btn").addEventListener("click", () => {
+      document.getElementById("<%= content['form_id'] %>").submit();
+    });
+  </script>
+<% end %>

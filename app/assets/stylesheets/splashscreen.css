@@ -1,0 +1,64 @@
+@import "shared.css";
+
+.container {
+  height: 100vh;
+  background-color: var(--background-color);
+  padding: 1rem;
+}
+
+.splash-banner {
+  position: relative;
+  width: auto;
+  height: 80%;
+}
+
+.splash-logo {
+  display: block;
+  margin: auto;
+  width: 8rem;
+  margin-bottom: 1rem;
+}
+
+.splash-text {
+  text-align: center;
+  white-space: nowrap;
+  font-family: var(--font-family-righteous);
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
+.btn-cont {
+  width: 100%;
+  margin: auto;
+  font-family: var(--font-family-nunito);
+}
+
+.link-btn {
+  text-decoration: none;
+}
+
+.splash-btn {
+  display: block;
+  font-weight: 300;
+  font-size: 1rem;
+  text-align: center;
+  border: 0;
+  padding: 0.8rem;
+}
+
+.login-btn {
+  color: white;
+  background-color: var(--primary-color);
+  border-radius: var(--radius-4);
+}
+
+.signup-btn {
+  color: var(--text-semi-dark-color);
+  background-color: var(--background-color);
+}
+
+.sign-down {
+  color: white;
+  background-color: var(--danger-color);
+  border-radius: var(--radius-4);
+}

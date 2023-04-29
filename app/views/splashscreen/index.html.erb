@@ -1,0 +1,15 @@
+<div class="container">
+  <div class=splash-banner>
+    <div class="center">
+      <%= image_tag '/logo.svg', :class => "splash-logo" %>
+      <h1 class="splash-text">spend tracker</h1>
+    </div>
+  </div>
+  
+  <div class="btn-cont">
+    <%= link_to "LOG IN", new_user_session_path, class: "splash-btn link-btn login-btn" %>
+    <%= link_to "SIGN UP", new_user_registration_path, class: "splash-btn link-btn signup-btn" %>
+  </div>
+</div>
+
+

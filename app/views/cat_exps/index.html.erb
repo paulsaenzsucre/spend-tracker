@@ -1,0 +1,13 @@
+<div class="cat-page">
+  <p style="color: green"><%= notice %></p>
+  <%= render @category %>
+  <div class="flex-col cat-list-cont" id="cat_exps">
+    <% @cat_exps.each do |cat_exp| %>
+      <%= render cat_exp %>
+    <% end %>
+  </div>
+
+  <%= link_to new_expense_path(category: @category), :class => "link-btn splash-btn cat-add-new" do %>
+    <p class="center">ADD EXPENSE</p>
+  <% end %>
+</div>
