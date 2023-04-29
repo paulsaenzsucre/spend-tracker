@@ -110,9 +110,15 @@ NAVBAR_CONTENT = {
     },
     'new' => {
       'title' => 'ADD EXPENSE',
-      'action_name' => 'Add',
+      'action_name' => 'Create',
       'action' => 'form',
-      'form_id' => 'new_cat'
+      'form_id' => 'new_exp'
+    },
+    'create' => {
+      'title' => 'ADD EXPENSE',
+      'action_name' => 'Create',
+      'action' => 'form',
+      'form_id' => 'new_exp'
     }
   },
   'cat_exps' => {
