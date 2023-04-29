@@ -11,6 +11,7 @@
 # Seed Categories
 i = 1
 j = 1
+k = 1
 3.times do
   user = User.create(
     name: "User#{i}",
@@ -21,11 +22,27 @@ j = 1
   user.confirm
 
   5.times do
-    user.categories.create(
+    cat = user.categories.create(
       name: "Category #{j}",
       icon: 'home.svg'
     )
+
+    3.times do
+      exp = Expense.create(
+        name: "Expense #{k}",
+        amount: 100.0,
+        author: user
+      )
+
+      cat.cat_exps.create(
+        expense: exp
+      )
+      k += 1    
+    end
     j += 1
   end
+
+  
+
   i += 1
 end
