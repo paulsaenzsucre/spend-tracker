@@ -71,12 +71,12 @@ Rails.application.configure do
   }
 
   config.action_mailer.smtp_settings = {
-    :address => ENV["MAILER_ADDRESS"],
-    :port => ENV["MAILER_PORT"],
-    :user_name => ENV["MAILER_USERNAME"],
-    :password => ENV["MAILER_PASSWORD"],
-    :authentication => :plain,
-    :enable_starttls_auto => true
+    address: ENV["MAILER_ADDRESS"],
+    port: ENV["MAILER_PORT"],
+    user_name: ENV["MAILER_USERNAME"],
+    password: ENV["MAILER_PASSWORD"],
+    authentication: 'login',
+    enable_starttls_auto: true
   }
 
   # Ignore bad email addresses and do not raise email delivery errors.
