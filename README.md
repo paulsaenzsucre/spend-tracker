@@ -67,6 +67,8 @@
 
 - [Live Demo Link](https://pss-spend-tracker.onrender.com)
 
+- [Live Presentation Link](https://www.loom.com/share/d8036b29844640608267d17e9eaf1012)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -138,6 +140,8 @@ Give a ⭐️ if you like this project!
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+- This work, "SPEND TRACKER", is a web page implementation of ["Snapscan"](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=&) by [Gregoire Vella](https://www.behance.net/gregoirevella), used under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
 - Hat tip to anyone whose code was used.
 - Thanks for all the curated content that was provided to us.

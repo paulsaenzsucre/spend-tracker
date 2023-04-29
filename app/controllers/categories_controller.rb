@@ -13,7 +13,7 @@ class CategoriesController < ApplicationController
   # GET /categories/new
   def new
     @category = current_user.categories.new
-    @images = Dir.glob('app/assets/images/categories/*.svg')
+    @images = Dir.glob('app/assets/images/categories/*.*')
   end
 
   # GET /categories/1/edit
