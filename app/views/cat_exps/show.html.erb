@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @cat_exp %>
+
+<div>
+  <%= link_to "Edit this cat exp", edit_cat_exp_path(@cat_exp) %> |
+  <%= link_to "Back to cat exps", cat_exps_path %>
+
+  <%= button_to "Destroy this cat exp", @cat_exp, method: :delete %>
+</div>

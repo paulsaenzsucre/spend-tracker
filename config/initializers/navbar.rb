@@ -96,5 +96,13 @@ NAVBAR_CONTENT = {
       'action' => 'logout',
       'form_id' => nil
     }
+  },
+  'cat_exps' => {
+    'index' => {
+      'title' => 'EXPENSES',
+      'action_name' => 'Log out',
+      'action' => 'logout',
+      'form_id' => nil
+    }
   }
 }

@@ -1,9 +1,9 @@
 class Category < ApplicationRecord
   belongs_to :user
-  has_many :expenses, dependent: :destroy
+  has_many :cat_exps
 
   def total_amount
-    250.0
+    cat_exps.joins(:expense).sum(:amount)
   end
 
   def last_update
