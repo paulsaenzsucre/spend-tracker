@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
 
   def set_navbar_content
     controller = params[:controller]
-    action = params[:action]    
+    action = params[:action]
     @navbar_content = NAVBAR_CONTENT[controller][action] || 'SPEND TRACKER'
   end
 
