@@ -5,3 +5,27 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+
+# Seed Users
+# Seed Categories
+i = 1
+j = 1
+3.times do
+  user = User.create(
+    name: "User#{i}",
+    email: "user#{i}@user.com",
+    password: '123456',
+    confirmed_at: Time.now
+  )
+  user.confirm
+
+  5.times do
+    user.categories.create(
+      name: "Category #{j}",
+      icon: 'home.svg'
+    )
+    j += 1
+  end
+  i += 1
+end
