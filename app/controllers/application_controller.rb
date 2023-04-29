@@ -6,11 +6,19 @@ class ApplicationController < ActionController::Base
 
   def set_navbar_content
     controller = params[:controller]
-    action = params[:action]
+    action = params[:action]    
     @navbar_content = NAVBAR_CONTENT[controller][action] || 'SPEND TRACKER'
   end
 
   protected
+
+  def authenticate_user!
+    if user_signed_in?
+      super
+    else
+      redirect_to splashscreen_path
+    end
+  end
 
   def update_allowed_parameters
     devise_parameter_sanitizer.permit(:sign_up) { |u| u.permit(:name, :email, :password) }
