@@ -71,9 +71,9 @@ Rails.application.configure do
   }
 
   config.action_mailer.smtp_settings = {
-    address: 'smtp-relay.sendinblue.com',
-    port: 587,
-    user_name: 'psaenzsucre@gmail.com',
+    address: ENV["MAILER_ADDRESS"],
+    port: ENV["MAILER_PORT"],
+    user_name: ENV["MAILER_USERNAME"],
     password: ENV["MAILER_PASSWORD"],
     authentication: 'login',
     enable_starttls_auto: true
